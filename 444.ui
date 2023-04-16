@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F0F8FF;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_cap">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>0</y>
+      <width>481</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #333; /* цвет текста */
+    font-size: 20px; /* размер шрифта */
+    font-family: Arial, sans-serif; /* семейство шрифтов */
+    padding: 10px; /* отступы внутри QLabel */
+    background-color: #F0F8FF; /* цвет фона */
+    border-radius: 5px; /* закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* тень */
+}
+
+
+
+QLabel:focus {
+    outline: none; /* убрать стандартный контур фокуса */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при фокусировке */
+}
+
+QLabel::selection {
+    background-color: #ddd; /* цвет выделения текста */
+    color: #333; /* цвет текста в выделенном тексте */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Скачать видео с ютуба</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>90</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_download">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>490</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #2c2c2c;
+    transition: background-color 0.3s ease-in-out;
+}
+
+QPushButton:pressed {
+    background-color: #222;
+    transition: background-color 0.1s ease-in-out;
+}
+
+QPushButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Скачать</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_file">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+  background-color: #f2f2f2;
+  border: 5px solid #ccc;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+QTextEdit:focus {
+  border: 2px solid #4CAF50;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_save">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>400</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #333; /* цвет текста */
+    font-size: 20px; /* размер шрифта */
+    font-family: Arial, sans-serif; /* семейство шрифтов */
+    padding: 10px; /* отступы внутри QLabel */
+    background-color: #F0F8FF; /* цвет фона */
+    border-radius: 5px; /* закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* тень */
+}
+
+
+
+QLabel:focus {
+    outline: none; /* убрать стандартный контур фокуса */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень при фокусировке */
+}
+
+QLabel::selection {
+    background-color: #ddd; /* цвет выделения текста */
+    color: #333; /* цвет текста в выделенном тексте */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Куда сохранить файл?(папка)</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_file">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>350</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+  background-color: #F0F8FF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+QPushButton:hover {
+  background-color: #A9A9A9;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Downloads/free-icon-add-file-8887030.png</normaloff>../../../../Downloads/free-icon-add-file-8887030.png</iconset>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_file_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+  background-color: #f2f2f2;
+  border: 5px solid #ccc;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+QTextEdit:focus {
+  border: 2px solid #4CAF50;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>401</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Вставьте ссылку:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="info"/>
+    <addaction name="add_folder"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Выход</string>
+    </property>
+    <addaction name="exit_prog"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="info">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+  <action name="add_folder">
+   <property name="text">
+    <string>Куда сохранить файл</string>
+   </property>
+  </action>
+  <action name="exit_prog">
+   <property name="text">
+    <string>Выйти из программы</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
